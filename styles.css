@@ -1,0 +1,289 @@
+@font-face {
+    font-family: 'Itim';
+    src: url('Itim-Regular.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Itim', cursive, sans-serif;
+    background-color: #a8d5e2; /* Light blue background */
+    color: #104911; /* Dark green text */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f9a620; /* Bright yellow */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    background-color: #548c2f; /* Dark green */
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.intro {
+    background-color: #ffd449; /* Light yellow */
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.intro h2 {
+    color: #104911; /* Dark green */
+    margin-bottom: 10px;
+}
+
+.visuals {
+    background-color: #ffd449; /* Light yellow */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.visuals h3 {
+    color: #104911; /* Dark green */
+    margin-bottom: 10px;
+}
+
+.visuals img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #f9a620; /* Bright yellow */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.quiz {
+    background-color: #ffd449; /* Light yellow */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.quiz button {
+    background-color: #f9a620; /* Bright yellow */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quiz button:hover {
+    background-color: #548c2f; /* Dark green */
+}
+
+#feedback {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+}
+
+/* Centered container for index.html */
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f9a620;
+    text-align: center;
+}
+
+.centered-container .logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+/* Preview page styles */
+.preview-header {
+    background-color: #7ed957;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Itim', cursive, sans-serif;
+    color: #104911;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-icon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #104911;
+    font-family: 'Itim', cursive, sans-serif;
+}
+
+.search-bar button {
+    background-color: #f9a620;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Itim', cursive, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.logo-small {
+    width: 40px;
+    height: 40px;
+}
+
+.preview-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #ffd449;
+    min-height: 80vh;
+    border-radius: 30px;
+}
+
+.orange-box {
+    background-color: #f9a620;
+    border-radius: 30px;
+    padding: 40px 60px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto 20px auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.center-column .logo-small {
+    width: 100px;
+    height: 100px;
+}
+
+.center-column h1 {
+    font-family: 'Itim', cursive, sans-serif;
+    color: #104911;
+    font-size: 3em;
+    margin-top: 10px;
+}
+
+.preview-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 45%;
+}
+
+.preview-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #a8d5e2;
+    border: 3px solid #7ed957;
+    border-radius: 30px;
+    padding: 25px;
+    text-decoration: none;
+    color: #104911;
+    font-weight: bold;
+    font-family: 'Itim', cursive, sans-serif;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.preview-box:hover {
+    background-color: #7ed957;
+    border-color: #f9a620;
+}
+
+.preview-box img {
+    width: 50px;
+    height: 50px;
+}
